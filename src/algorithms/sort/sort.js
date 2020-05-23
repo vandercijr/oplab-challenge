@@ -22,6 +22,7 @@
          const shouldSwap = array_input[a] > array_input[b];
 
          if (shouldSwap) {
+           found = true;
            swap(array_input, a, b);
          }
        }
