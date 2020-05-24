@@ -13,6 +13,7 @@ class SinglyLinkedList  {
   constructor() {
     this.head_node = undefined;
   }
+
   //////////////////////////////////////////////////////////////////////////
   // add a node at top of the list
   addToTop(id, data)  {
@@ -29,6 +30,17 @@ class SinglyLinkedList  {
   //////////////////////////////////////////////////////////////////////////
   // add a node like push data into an array
   push(id, data)  {
+    let current_node = this.head_node;
+    let next;
+
+    if (typeof this.head_node === 'undefined') {
+        this.addToTop(id, data);
+        return true;
+    }
+
+    while (typeof current_node.next !== 'undefined') current_node = current_node.next;
+
+    current_node.next = new Node(id, data, next);
   };
   //////////////////////////////////////////////////////////////////////////
 
