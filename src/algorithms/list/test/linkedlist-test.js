@@ -9,3 +9,6 @@
  * Documentação: http://chaijs.com/guide/styles/#expect
  *
  */
+
+ const chai = require('chai');
+ const expect = chai.expect;
