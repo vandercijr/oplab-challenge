@@ -16,6 +16,10 @@ class SinglyLinkedList  {
 
   validationMessage =  ['Id should be an integer'];
 
+  isValidId = (id)  =>  {
+    return (id > 0);
+  }
+
   //////////////////////////////////////////////////////////////////////////
   // add a node at top of the list
   addToTop(id, data)  {
@@ -48,6 +52,24 @@ class SinglyLinkedList  {
 
   //////////////////////////////////////////////////////////////////////////
   remove(id)  {
+    if (!this.isValidId(id)) return this.validationMessage[0];
+
+    let current_node = this.head_node;
+
+    while (typeof current_node.next !== 'undefined') {
+      //check the if first node contain the id
+      if (current_node.id === id) {
+        this.head_node = current_node.next;
+        return true;
+      }
+
+      if (current_node.next.id === id) {
+        current_node.next = current_node.next.next;
+        return true;
+      }
+
+      current_node = current_node.next;
+    }    
   };
   //////////////////////////////////////////////////////////////////////////
 
