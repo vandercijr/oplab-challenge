@@ -16,6 +16,13 @@ class SinglyLinkedList  {
   //////////////////////////////////////////////////////////////////////////
   // add a node at top of the list
   addToTop(id, data)  {
+    let next = undefined;
+
+    if (typeof this.head_node !== 'undefined') {
+        next = this.head_node;
+    }
+
+    this.head_node = new Node(id, data, next);
   };
   //////////////////////////////////////////////////////////////////////////
 
