@@ -31,4 +31,21 @@
 
      expect(singlyLinkedList.count()).to.be.equal(0);
  	});
+  
+  it('Should have count equal to 1 pushing a item to the linked list', () => {
+    const singlyLinkedList = new SinglyLinkedList();
+
+    singlyLinkedList.push(1, input[0]);
+
+    expect(singlyLinkedList.count()).to.be.equal(1);
+	});
+
+  it('Should have count equal to 2 pushing a item to the linked list', () => {
+    const singlyLinkedList = new SinglyLinkedList();
+
+    singlyLinkedList.push(1, input[0]);
+    singlyLinkedList.push(2, input[1]);
+
+    expect(singlyLinkedList.count()).to.be.equal(2);
+	});
 });
