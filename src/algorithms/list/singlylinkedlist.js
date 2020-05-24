@@ -14,6 +14,8 @@ class SinglyLinkedList  {
     this.head_node = undefined;
   }
 
+  validationMessage =  ['Id should be an integer'];
+
   //////////////////////////////////////////////////////////////////////////
   // add a node at top of the list
   addToTop(id, data)  {
@@ -62,7 +64,7 @@ class SinglyLinkedList  {
       current_node = current_node.next;
     }
 
-    return new Node({}, {});    
+    return new Node({}, {});
   };
   //////////////////////////////////////////////////////////////////////////
 
