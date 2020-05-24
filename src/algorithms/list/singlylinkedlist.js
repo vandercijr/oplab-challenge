@@ -51,6 +51,18 @@ class SinglyLinkedList  {
 
   //////////////////////////////////////////////////////////////////////////
   find(id)  {
+    if (!this.isValidId(id)) return this.validationMessage[0];
+
+    let current_node = this.head_node;
+
+    while (typeof current_node !== 'undefined') {
+      if (current_node.id === id) {
+        return current_node;
+      }
+      current_node = current_node.next;
+    }
+
+    return new Node({}, {});    
   };
   //////////////////////////////////////////////////////////////////////////
 
