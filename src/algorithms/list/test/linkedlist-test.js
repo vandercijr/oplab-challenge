@@ -66,4 +66,13 @@
     expect(singlyLinkedList.findAll()).to.deep.equal(mylist);
   });
 
+  it('Should find the specified item on the linked list', () => {
+    const singlyLinkedList = new SinglyLinkedList();
+
+    singlyLinkedList.push(1, input[0]);
+    singlyLinkedList.push(2, input[1]);
+
+    expect(singlyLinkedList.find(2)).to.deep.equal(item2);
+	});
+
 });
