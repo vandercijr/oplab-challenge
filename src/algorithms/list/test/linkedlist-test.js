@@ -75,4 +75,25 @@
     expect(singlyLinkedList.find(2)).to.deep.equal(item2);
 	});
 
+  it('Should remove the first item from the linked list', () => {
+    const singlyLinkedList = new SinglyLinkedList();
+
+    singlyLinkedList.push(1, input[0]);
+    singlyLinkedList.push(2, input[1]);
+
+    singlyLinkedList.remove(1)
+
+    expect(singlyLinkedList.findAll()).to.deep.equal(item2);
+	});
+
+  it('Should remove the second item from the linked list', () => {
+    const singlyLinkedList = new SinglyLinkedList();
+
+    singlyLinkedList.push(1, input[0]);
+    singlyLinkedList.push(2, input[1]);
+
+    singlyLinkedList.remove(2)
+
+    expect(singlyLinkedList.findAll()).to.deep.equal(item1);
+	});
 });
