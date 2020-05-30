@@ -7,6 +7,12 @@
  * Data: 30/05/2020
  */
 
+/**
+  * tweetReader function
+  * Parameters twitter credentials => The token keys to connect to api
+  *        search_word => a string to search for
+  *        number_of_tweets => an integer greater than 0. Number of tweets returned
+*/
 const tweetReader = (credentials, search_word, number_of_tweets) =>  {
   const Twitter = require('twitter');
 
