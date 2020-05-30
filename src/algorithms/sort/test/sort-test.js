@@ -56,13 +56,13 @@ const  dsorted_array = [
   'Cordelia Holt'
 ];
 
-describe('Test some sort algorithms', ()  =>  {
-  it('Should sort an array using ascendent BubbleSort algorithm', ()  =>  {
+describe('Test some sort algorithms', function() {
+  it('Should sort an array using ascendent BubbleSort algorithm', function() {
     bubbleSort(array_input);
     expect(array_input).to.deep.equal(asorted_array);
   });
 
-  it('Should sort an array using descendent BubbleSort algorithm', () =>  {
+  it('Should sort an array using descendent BubbleSort algorithm', function() {
     bubbleSort(array_input, 'desc');
     expect(array_input).to.deep.equal(dsorted_array);
   });
