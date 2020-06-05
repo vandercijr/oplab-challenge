@@ -11,6 +11,8 @@ class Player  {
   move(stones) {
     if (stones === 1) return 0;
 
+    this.gameRule.adjustValidMove(stones);
+
     const valid_moves = this.gameRule.validMoves;
 
     return valid_moves[Math.floor(Math.random() * valid_moves.length)];
