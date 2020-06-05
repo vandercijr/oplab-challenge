@@ -6,12 +6,23 @@ class GameRule {
   totalValidMoves = [2, 3, 5];
   validMoves = [];
 
+  /** This method adjusts the valid moves when the number of stones becomes less then the major number of valid moves, or less or equal 7
+   ** due to the valid moves and the challenge rules that imposed no failling moves
+  */
   adjustValidMove(stones) {
     this.validMoves = [];
 
-    while (GameOfStonesRule.validMoves[GameOfStonesRule.validMoves.length-1] > stones)
-      GameOfStonesRule.validMoves.splice(GameOfStonesRule.validMoves.length-1);
+    for (let i = 0; i < this.totalValidMoves.length; i++) {
+      if (stones - this.totalValidMoves[i] <= 1) {
+        this.validMoves.push(this.totalValidMoves[i]);
+        return true;
+      }
+    }
 
+    this.validMoves = this.totalValidMoves; //
+    // while (GameOfStonesRule.validMoves[GameOfStonesRule.validMoves.length-1] > stones)
+    //   GameOfStonesRule.validMoves.splice(GameOfStonesRule.validMoves.length-1);
+    //
 
     return true;
   }
