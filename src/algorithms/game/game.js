@@ -9,6 +9,9 @@
  */
 const Player = require('./player');
 
+/**
+* I've decide to use events here to provide any interface get the results from the game.
+*/
 const events = require('events');
 
 const game = (stones) =>  {
@@ -26,7 +29,39 @@ const game = (stones) =>  {
 
   const run = () => {
     while (stones > 1) {
+      eventEmitter.emit('game.turn', {
+        turn: turn
+      });
+
+      for (let i = 0; i < nplayers; i++) {
+        const _move = players[i].move(stones);
+
+        eventEmitter.emit('player.move', {
+          name: players[i].name,
+          move: _move
+        });
+
+        stones -= _move;
+
+        eventEmitter.emit('game.stone', {
+          stones: stones
+        });
+
+        if (stones <= 1) {
+          eventEmitter.emit('game.winner', {
+            name: players[i].name
+          });
+          return true;
+        }
+      }
+
+      turn++;
     }
+  };
+
+  return {
+    run: run,
+    events: eventEmitter
   };
 };
 
