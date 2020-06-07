@@ -1,3 +1,30 @@
+$full-width: 100%;
+$full-height: 100%;
+$main-font-family: Poppins;
+
+h1 {
+  font-size: 16px;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $main-font-family;
+}
+
 .app {
   width: $full-width;
 	height: $full-height;
