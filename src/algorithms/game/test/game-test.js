@@ -15,8 +15,8 @@ const Game = require('../game.js');
 
 const expect = chai.expect;
 
-describe('Test game of stones', () => {
-  it('Give 2 stones Should return First player as a winner', () =>  {
+describe('Test game of stones', function() {
+  it('Give 2 stones Should return First player as a winner', function() {
     const game = Game(2);
     game.events.on('game.winner', function (e) {
       expect(e.name).to.be.equal('First');
@@ -24,7 +24,7 @@ describe('Test game of stones', () => {
     game.run();
   });
 
-  it('Give 3 stones Should return First player as a winner', () =>  {
+  it('Give 3 stones Should return First player as a winner', function() {
     const game = Game(3);
     game.events.on('game.winner', function (e) {
       expect(e.name).to.be.equal('First');
@@ -32,7 +32,7 @@ describe('Test game of stones', () => {
     game.run();
   });
 
-  it('Give 4 stones Should return First player as a winner', () =>  {
+  it('Give 4 stones Should return First player as a winner', function() {
     const game = Game(4);
     game.events.on('game.winner', function (e) {
       expect(e.name).to.be.equal('First');
@@ -40,7 +40,7 @@ describe('Test game of stones', () => {
     game.run();
   });
 
-  it('Give 5 stones Should return First player as a winner', () =>  {
+  it('Give 5 stones Should return First player as a winner', function() {
     const game = Game(5);
     game.events.on('game.winner', function (e) {
       expect(e.name).to.be.equal('First');
@@ -48,7 +48,7 @@ describe('Test game of stones', () => {
     game.run();
   });
 
-  it('Give 6 stones Should return First player as a winner', () =>  {
+  it('Give 6 stones Should return First player as a winner', function() {
     const game = Game(6);
     game.events.on('game.winner', function (e) {
       expect(e.name).to.be.equal('First');
@@ -56,7 +56,7 @@ describe('Test game of stones', () => {
     game.run();
   });
 
-  it('Give 7 stones Should return Second player as a winner', () => {
+  it('Give 7 stones Should return Second player as a winner', function() {
     const game = Game(7);
     game.events.on('game.winner', function (e) {
       expect(e.name).to.be.equal('Second');
@@ -64,7 +64,7 @@ describe('Test game of stones', () => {
     game.run();
   });
 
-  it('Give 8 stones Should return Second player as a winner', () => {
+  it('Give 8 stones Should return Second player as a winner', function() {
     const game = Game(8);
     game.events.on('game.winner', function (e) {
       expect(e.name).to.be.equal('Second');
@@ -72,7 +72,7 @@ describe('Test game of stones', () => {
     game.run();
   });
 
-  it('Give 9 stones Should return First or Second players as winners', () =>  {
+  it('Give 9 stones Should return First or Second players as winners', function() {
     const game = Game(9);
     game.events.on('game.winner', function (e) {
       expect(['First', 'Second']).to.include(e.name);
