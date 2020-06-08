@@ -1,4 +1,4 @@
-//game console runner 
+//game console runner
 
 const Game = require('./game/game.js');
 const argv = process.argv.slice(2);
@@ -16,7 +16,7 @@ const argv = process.argv.slice(2);
 
   const game = Game(parseInt(argv[0]));
 
-  game.events.on('game.start', (e) =>  {
+  game.events.on('game.start', () =>  {
     console.log('Game started');
   });
 
