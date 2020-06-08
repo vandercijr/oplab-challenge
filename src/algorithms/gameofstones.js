@@ -18,23 +18,23 @@ const argv = process.argv.slice(2);
 
   game.events.on('game.start', (e) =>  {
     console.log('Game started');
-  })
+  });
 
   game.events.on('game.turn', (e) =>  {
-    console.log("Turn #" + e.turn);
-  })
+    console.log('Turn #' + e.turn);
+  });
 
   game.events.on('game.stone', (e) =>  {
     console.log(e.stones + ' stone(s) left');
-  })
+  });
 
   game.events.on('player.move', (e) =>  {
-    console.log('Player ' + e.name + " removed " + e.move + " stones");
-  })
+    console.log('Player ' + e.name + ' removed ' + e.move + ' stones');
+  });
 
   game.events.on('game.winner', (e) =>  {
     console.log('The winner is ' + e.name);
-  })
+  });
 
   game.run();
 })();
