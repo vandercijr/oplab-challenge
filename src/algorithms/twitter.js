@@ -17,20 +17,20 @@ const argv = process.argv.slice(2);
   dotenv.config({path: path.resolve(__dirname + '/../../.env') });
 
   const twitter_response = Twitter({
-      consumer_key: process.env.CONSUMER_KEY,
-      consumer_secret: process.env.CONSUMER_SECRET,
-      access_token_key: process.env.TOKEN_KEY,
-      access_token_secret: process.env.TOKEN_SECRET,
-    },
-    argv[0],
-    argv[1]
+    consumer_key: process.env.CONSUMER_KEY,
+    consumer_secret: process.env.CONSUMER_SECRET,
+    access_token_key: process.env.TOKEN_KEY,
+    access_token_secret: process.env.TOKEN_SECRET,
+  },
+  argv[0],
+  argv[1]
   );
 
- twitter_response
-  .then((res) =>  {
-    console.log(res);
-  })
-  .catch((err)  =>  {
-    console.log(err);
-  })
+  twitter_response
+    .then((res) =>  {
+      console.log(res);
+    })
+    .catch((err)  =>  {
+      console.log(err);
+    });
 })();
