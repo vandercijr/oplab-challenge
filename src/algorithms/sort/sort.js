@@ -1,4 +1,5 @@
 'use strict';
+
 /**
  * File: sort.js
  * Author: Vanderci Curvelo Junior
@@ -6,6 +7,7 @@
  * Data: 23/05/2020
  *
  */
+
 const swap = (swap_array, i, j) =>  {
   const auxiliar = swap_array[i];
 
