@@ -1,4 +1,5 @@
 'use strict';
+
 /**
  * File: twitter.js
  * Author: Vanderci Curvelo Junior
