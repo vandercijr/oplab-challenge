@@ -1,4 +1,5 @@
 'use strict';
+
 /**
  * File: linkedlist.js
  * Author: Vanderci Curvelo Junior
@@ -6,6 +7,7 @@
  * Data: 24/05/2020
  *
  */
+ 
 const SinglyLinkedList = require('./singlylinkedlist');
 
 module.exports = SinglyLinkedList;
