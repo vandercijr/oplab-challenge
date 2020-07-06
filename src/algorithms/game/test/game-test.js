@@ -1,4 +1,5 @@
 'use strict';
+
 /**
  * File: game-test.js
  * Author: Vanderci Curvelo Junior
