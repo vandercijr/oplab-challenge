@@ -1,4 +1,5 @@
 'use strict';
+
 /**
  * File: player-test.js
  * Author: Vanderci Curvelo Junior
