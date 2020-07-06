@@ -7,6 +7,7 @@
  * Data: 24/05/2020
  *
  */
+ 
 const  Node = require('./singlylinkedlistnode');
 
 class SinglyLinkedList  {
