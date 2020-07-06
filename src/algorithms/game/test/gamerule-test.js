@@ -1,4 +1,5 @@
 'use strict';
+
 /**
  * File: gamerule-test.js
  * Author: Vanderci Curvelo Junior
