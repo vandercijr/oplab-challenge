@@ -1,4 +1,5 @@
 'use strict';
+
 /**
  * File: sort-test.js
  * Author: Vanderci Curvelo Junior
