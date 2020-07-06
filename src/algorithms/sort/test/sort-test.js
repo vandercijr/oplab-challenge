@@ -1,11 +1,11 @@
 'use strict';
 /**
- * Arquivo: sort-test.js
+ * File: sort-test.js
  * Author: Vanderci Curvelo Junior
  * Description: test for the file : 'sort.js'
  * Data: 23/05/2020
  *
- * Documentação: http://chaijs.com/guide/styles/#expect
+ * Documentation: http://chaijs.com/guide/styles/#expect
  *
  */
 

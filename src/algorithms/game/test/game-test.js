@@ -1,11 +1,11 @@
 'use strict';
 /**
- * Arquivo: game-test.js
+ * File: game-test.js
  * Author: Vanderci Curvelo Junior
  * Description: test for the file : 'game.js'
  * Data: 31/05/2020
  *
- * Documentação: http://chaijs.com/guide/styles/#expect
+ * Documentation: http://chaijs.com/guide/styles/#expect
  *
  */
 

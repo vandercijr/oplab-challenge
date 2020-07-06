@@ -1,6 +1,6 @@
 'use strict';
 /**
- * Arquivo: linkedlist.js
+ * File: linkedlist.js
  * Author: Vanderci Curvelo Junior
  * Description: very basic implementation of some linkedlist algorithms'
  * Data: 24/05/2020

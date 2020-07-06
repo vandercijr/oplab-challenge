@@ -1,6 +1,6 @@
 'use strict';
 /**
- * Arquivo: twitter.js
+ * File: twitter.js
  * Author: Vanderci Curvelo Junior
  * Description: implementation of a twitter API consumer
  * run on nodejs

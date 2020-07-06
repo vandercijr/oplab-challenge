@@ -1,11 +1,11 @@
 'use strict';
 /**
- * Arquivo: twitter-test.js
+ * File: twitter-test.js
  * Author: Vanderci Curvelo Junior
  * Description: test for the file : 'twitter.js'
  * Data: 30/05/2020
  *
- * Documentação: http://chaijs.com/guide/styles/#expect
+ * Documentation: http://chaijs.com/guide/styles/#expect
  *
  */
 

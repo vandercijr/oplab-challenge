@@ -20,9 +20,6 @@ class GameRule {
     }
 
     this.validMoves = this.totalValidMoves; //
-    // while (GameOfStonesRule.validMoves[GameOfStonesRule.validMoves.length-1] > stones)
-    //   GameOfStonesRule.validMoves.splice(GameOfStonesRule.validMoves.length-1);
-    //
 
     return true;
   }

@@ -1,6 +1,6 @@
 'use strict';
 /**
- * Arquivo: gameofstones.js
+ * File: gameofstones.js
  * Author: Vanderci Curvelo Junior
  * Description: implementation of gameofstones game challenge from https://www.hackerrank.com/challenges/game-of-stones-1/problem'
  * port from mine C++ implementation
@@ -10,7 +10,7 @@
 const Player = require('./player');
 
 /**
-* I've decide to use events here to provide any interface get the results from the game.
+* I've decide to use events here in order to provide any interface get the results from the game.
 */
 const events = require('events');
 

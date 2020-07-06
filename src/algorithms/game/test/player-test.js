@@ -1,11 +1,11 @@
 'use strict';
 /**
- * Arquivo: player-test.js
+ * File: player-test.js
  * Author: Vanderci Curvelo Junior
  * Description: test for the file : 'player.js'
  * Data: 31/05/2020
  *
- * Documentação: http://chaijs.com/guide/styles/#expect
+ * Documentation: http://chaijs.com/guide/styles/#expect
  *
  */
 

@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Arquivo: singlylinkedlist.js
+ * File: singlylinkedlist.js
  * Author: Vanderci Curvelo Junior
  * Description: very basic implementation of a singly linked list'
  * Data: 24/05/2020

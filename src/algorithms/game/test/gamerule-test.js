@@ -1,11 +1,11 @@
 'use strict';
 /**
- * Arquivo: gamerule-test.js
+ * File: gamerule-test.js
  * Author: Vanderci Curvelo Junior
  * Description: test for the file : 'gamerule.js'
  * Data: 05/06/2020
  *
- * Documentação: http://chaijs.com/guide/styles/#expect
+ * Documentation: http://chaijs.com/guide/styles/#expect
  *
  */
 
