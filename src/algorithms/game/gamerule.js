@@ -19,8 +19,8 @@ class GameRule {
       }
     }
 
-    this.validMoves = this.totalValidMoves; //
-
+    this.validMoves = this.totalValidMoves;
+    
     return true;
   }
 }
