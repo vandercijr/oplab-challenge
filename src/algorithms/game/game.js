@@ -1,4 +1,5 @@
 'use strict';
+
 /**
  * File: gameofstones.js
  * Author: Vanderci Curvelo Junior
@@ -7,6 +8,7 @@
  * run on nodejs
  * Data: 05/06/2020
  */
+
 const Player = require('./player');
 
 /**
